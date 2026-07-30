@@ -49,6 +49,12 @@ int main() {
 		}
 		std::cout << c << std::endl;
 	}
+	
+	//goto语句：可以无条件跳转语句
+	goto step1;
+	//………………………………（一堆代码）
+step1:
+	std::cout << "尽最大量不要使用这个goto语句，不然超过500行代码你就会抓狂（" << std::endl;
 	system("pause");
 	return 0;
 }
