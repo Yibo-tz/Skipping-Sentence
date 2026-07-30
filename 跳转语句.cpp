@@ -48,7 +48,7 @@ int main() {
 			continue;//break会退出循环，而continue不会，会继续循环
 		}
 		std::cout << c << std::endl;
-	}//~
+	}
 	system("pause");
 	return 0;
 }
