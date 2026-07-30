@@ -1,7 +1,8 @@
 ﻿#include<iostream>
 int main() {
+	std::cout << "接下来是跳转语句,你会受到莫名其妙的问题和回复，不要怀疑它的合理性，因为这本身就是我拿来练习的\n" << std::endl;
 	//break的使用时机
-
+	
 	//1、出现在switch语句中
 	std::cout << "请选择副本难度" << std::endl;
 	std::cout << "1.普通" << std::endl;
@@ -38,6 +39,15 @@ int main() {
 			std::cout << "*";
 		}
 		std::cout << std::endl;
+	}
+	//continue语句：在循环语句中，跳过本次循环中余下的尚未执行的语句，继续执行下一次循环
+	std::cout << "输出奇数" << std::endl;
+	for (int c = 0; c <= 100; c++) {
+		//如果是奇数输出，偶数不输出
+		if (c % 2 == 0) {
+			continue;//break会退出循环，而continue不会，会继续循环
+		}
+		std::cout << c << std::endl;
 	}
 	system("pause");
 	return 0;
